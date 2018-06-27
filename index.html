@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=Edge" />
+    <title>Home Page - Monitor</title>
+
+    <link href="./Content/jquery-ui-1.10.3.css" rel="stylesheet" />
+    <link href="./Content/site.css" rel="stylesheet" />
+    <link href="./Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="./Content/bootstrap-override.css" rel="stylesheet" />
+    <link href="./Content/weather-icons.min.css" rel="stylesheet" />
+    <link href="./Content/font-awesome-overlay.min.css" rel="stylesheet" />
+    <link href="./Content/OverlayCss.css" rel="stylesheet" />
+    <link href="./Content/animate.min.css" rel="stylesheet" />
+    <link href="./Content/animate.delay.css" rel="stylesheet" />
+    <link href="./Content/toggles.css" rel="stylesheet" />
+    <link href="./Content/pace.css" rel="stylesheet" />
+    <link href="./Content/tree.css" rel="stylesheet" />
+    <link href="./Content/Site.css" rel="stylesheet" />
+    <link href="./Content/sfd-paginador.css" rel="stylesheet" />
+    <link href="./Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="./Content/style.default.css" rel="stylesheet" />
+    <link href="./Content/CrossIe.css" rel="stylesheet" />
+
+    <link href="./Content/token-input.css" rel="stylesheet" />
+    <link href="./Content/token-input-facebook.css" rel="stylesheet" />
+    <link href="./Content/token-input-banbif.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.css" rel="stylesheet" />
+    <link href="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.structure.css" rel="stylesheet" />
+    <link href="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.theme.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="./Content/portoa/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/select2-bootstrap-theme/select2-bootstrap.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/nanoscroller/nanoscroller.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/stylesheets/theme.css" rel="stylesheet" />
+    <link href="./Content/portoa/assets/stylesheets/theme-custom.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/stylesheets/skins/default.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+    <link href="./Content/portoa/assets/vendor/pnotify/pnotify.custom.css" rel="stylesheet" />
+
+    <script src="./Content/portoa/assets/vendor/modernizr/modernizr.js"></script>
+
+
+    <script src="./Content/portoa/assets/vendor/jquery/jquery.js"></script>
+    <script src="./Content/portoa/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="./Content/portoa/assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/bootstrap/js/bootstrap.js"></script>
+
+    <script src="./Scripts/custom.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/nanoscroller/nanoscroller.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+    <script src="./Content/portoa/assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script src="./Content/portoa/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <script src="./Content/portoa/assets/vendor/pnotify/pnotify.custom.js"></script>
+
+    <script src="./Scripts/General.js"></script>
+    <link href="estilos.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $(".mainpanel").load("Contenido/inicio.html");
+            $("#menuregistro").click(function () {
+                $(".mainpanel").load("Contenido/registro.html");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="headerwrapper">
+            <div class="header-left">
+                <a href="/Inicio/Inicio" class="logo">
+                    <img src="./images/logo_banbif.png" alt="" />
+                </a>
+                <div class="pull-right">
+                    <a href="#" class="menu-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- header-left -->
+            <div class="header-right" style="width: auto !important">
+                <div class="pull-right">
+                    <div class="btn-group btn-group-list">
+                        <h4 style="color:#fff; font-size:14px;margin-right:5px;line-height: 3;">ACR</h4>
+                    </div>
+                    <div class="btn-group btn-group-list ">
+                        <img src="./images/icono_banbif.png" alt="" />
+                    </div>
+                    <!-- btn-group -->
+                    <div class="btn-group btn-group-option">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <ul class="dropdown-menu pull-right" role="menu">
+                            <li>
+                                <a href="/Inicio/Salir">
+                                    <i class="glyphicon glyphicon-log-out"></i>Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- btn-group -->
+
+                </div>
+                <!-- pull-right -->
+            </div>
+            <!-- header-right -->
+        </div>
+        <!-- headerwrapper -->
+    </header>
+    <section>
+        <div class="mainwrapper">
+            <div class="leftpanel">
+
+                <div class="media profile-left">
+                    <a class="pull-left profile-thumb">
+                        <img class="img-circle" src="./images/user/avatar.png" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Usuario</h4>
+                    </div>
+                </div>
+                <!-- media -->
+                <ul id="menu" class="nav nav-pills nav-stacked">
+                    <li class="parent">
+                        <a href="#">
+                            <i></i>
+                            <span>Registro</span>
+                        </a>
+                        <ul class="children" style="display: none;">
+                            <li class="">
+                                <a id="menuregistro" href="./IndexCombos.html">Oferta en combos</a>
+                            </li>
+                            <li class="">
+                                <a href="./index.html">Oferta individual</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <a href="#">
+                            <i></i>
+                            <span>SEGUNDO</span>
+                        </a>
+                        <ul class="children" style="display: none;">
+                            <li class="">
+                                <a>HIJO 21</a>
+                            </li>
+                            <li class="">
+                                <a>HIJO 22</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- leftpanel -->
+            <div class="mainpanel">
+
+                <!-- pageheader -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Datos del Titular
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Apellidos y Nombres:
+                                    </label>
+                                    <!--<asp:TextBox ID="txtApeNombres" onKeypress="sololetras();" runat="server" placeholder="Apellidos y Nombres" CssClass="form-control" Text="" />-->
+                                    <input id="txtApeNombres" onKeypress="sololetras();"  placeholder="Apellidos y Nombres" class="form-control"  type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Tipo de Documento:<span class="symbol required"></span>
+                                    </label>
+                                    <!--<asp:DropDownList ID="ddlTipoDocumento" runat="server" CssClass="form-control">
+                                    </asp:DropDownList>-->
+                                    <input id="ddlTipoDocumento" onkeypress="sololetras();" placeholder="Tipo Documento" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Número de Documento:<span class="symbol required"></span>
+                                    </label>                                    
+                                    <input id="txtNumeroDocumento" onkeypress="return isNumberKey(event, this);" placeholder="Nro de Documento" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Estado Civil: <span class="symbol required"></span>
+                                    </label>
+                                    <!--<asp:DropDownList ID="ddlEstCivil" runat="server" CssClass="form-control">
+                                    </asp:DropDownList>-->
+                                    <input id="ddlEstCivil" onkeypress="sololetras();" placeholder="Estado Civil" class="form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Situación Laboral:<span class="symbol required"></span>
+                                    </label>
+                                    <!--<asp:DropDownList ID="ddlSitLaboral" runat="server" CssClass="form-control">
+                                    </asp:DropDownList>-->
+                                    <input id="ddlEstCivil" onkeypress="sololetras();" placeholder="Situacion Laboral" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Género:<span class="symbol required"></span>
+                                    </label>
+                                    <!--<asp:DropDownList ID="ddlGenero" runat="server" CssClass="form-control">
+                                    </asp:DropDownList>-->
+                                    <input id="ddlGenero" onkeypress="sololetras();" placeholder="Genero" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Fecha de Nacimiento:<span class="symbol required"></span>
+                                    </label>
+                                    <!--<asp:TextBox ID="txtFecNacimiento" data-date-format="dd-mm-yyyy" data-date-viewmode="years" runat="server" placeholder="dd-mm-yyyy" MaxLength="10" CssClass="form-control" />-->
+                                    <input id="txtFecNacimiento" data-date-format="dd-mm-yyyy" data-date-viewmode="years" placeholder="dd-mm-yyyy" MaxLength="10" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Edad:
+                                    </label>
+                                    <!--<asp:TextBox ID="txtEdad" onKeypress="return isNumberKey(event, this);" runat="server" placeholder="Edad" CssClass="form-control" Text="" />-->
+                                    <input id="txtEdad" onkeypress="return isNumberKey(event, this);" placeholder="Edad" class="form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Ruc:
+                                    </label>
+                                    <!--<asp:TextBox ID="txtRucEmpresa" onKeypress="return isNumberKey(event, this);" runat="server" placeholder="Ruc Empresa" CssClass="form-control" Text="" />-->
+                                    <input id="txtRucEmpresa" onkeypress="return isNumberKey(event, this);" placeholder="Ruc Empresa" class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">
+                                        Razón Social:
+                                    </label>
+                                    <input id="txtRazonSocial" placeholder="Razon Social" class="form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12 panel panel-default">
+                                <div class="panel-heading">Tarjeta de Crédito<label style="color:red;">(CAMPAÑA)</label></div>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Línea de Crédito</th>
+                                            <th>Tipo de Plastico</th>
+                                            <th>Oferta Elegida</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="lblLinCre" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito" class="glyphicon-text-width:90%" value="2900.00" style="width:85%" />
+                                            </td>
+                                            <td>Visa Oro</td>
+                                            <td>
+                                                <!--<asp:RadioButton ID="idOfertaElegida" runat="server" Text="" />-->
+                                                <input id="idOfertaElegida" type="radio" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <label style="color:red;">Válido del 09/06/2018 al 09/07/2018</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 panel panel-default">
+
+                                <div class="panel-heading">Préstamo Libre Disponibilidad<label style="color:red;">(CAMPAÑA)</label></div>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Oferta Comercial</th>
+                                            <th>Plazo</th>
+                                            <th>Tasa</th>
+                                            <th>Oferta Elegida</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="Label1" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito1" class="glyphicon-text-width:90%" value="8800.00" style="width:85%" />
+                                            </td>
+                                            <td>12</td>
+                                            <td>22.25%</td>
+                                            <td>                                                
+                                                <input id="RadioButton1" type="radio" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="Label2" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito2" class="glyphicon-text-width:90%" value="9700.00" style="width:85%" />
+                                            </td>
+                                            <td>18</td>
+                                            <td>22.50%</td>
+                                            <td>
+                                                <!--<asp:RadioButton ID="RadioButton2" runat="server" Text="" />-->
+                                                <input id="RadioButton2" type="radio" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="Label3" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito3" class="glyphicon-text-width:90%" value="9700.00" style="width:85%" />
+                                            </td>
+                                            <td>24</td>
+                                            <td>22.50%</td>
+                                            <td>
+                                                <!--<asp:RadioButton ID="RadioButton3" runat="server" Text="" />-->
+                                                <input id="RadioButton3" type="radio" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="Label4" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito4" class="glyphicon-text-width:90%" value="9700.00" style="width:85%" />
+                                            </td>
+                                            <td>36</td>
+                                            <td>23.00%</td>
+                                            <td>
+                                                <!--<asp:RadioButton ID="RadioButton4" runat="server" Text="" />-->
+                                                <input id="RadioButton4" type="radio" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <asp:Label id="Label5" Text="$" runat="server" Width="10%"></asp:Label>
+                                                <input id="txtLineaCredito5" class="glyphicon-text-width:90%" value="9700.00" style="width:85%" />
+                                            </td>
+                                            <td>48</td>
+                                            <td>24.00%</td>
+                                            <td>                                                
+                                                <input id="RadioButton5" type="radio" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <label style="color:red;">Válido del 09/06/2018 al 09/07/2018</label>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Indicadores de Evaluación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Categoría de Ingreso</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LM S/.</td>
+                                            <td>25,042</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RCI(%)</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Indicador de Bancarización</td>
+                                            <td>S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Grupo Score</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <label style="color:red;">Válido del 09/06/2018 al 09/07/2018</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <input type="hidden" value="Las siguientes 2 líneas deben ir aquí y no en el head de lo contrario no se renderiza" />
+            <script src="./Content/portoa/assets/javascripts/theme.js"></script>
+            <script src="./Content/portoa/assets/javascripts/theme.custom.js"></script>
+            <script src="./Content/portoa/assets/javascripts/theme.init.js"></script>
+
+            <script src="./Content/portoa/assets/javascripts/tables/examples.datatables.default.js"></script>
+
+        </div>
+        <!-- mainwrapper -->
+    </section>
+
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Chrome","requestId":"fd86d4afca234e55ba690b74daa09da6"}
+    </script>
+    <!-- End Browser Link -->
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+﻿@media all and (-ms-high-contrast:none) {
+    .form-control {
+        padding: 4px 10px;
+    }
+
+    *::-ms-backdrop, .form-control {
+        padding: 4px 10px;
+    }
+}

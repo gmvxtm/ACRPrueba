@@ -1,0 +1,826 @@
+﻿@font-face {
+    font-family: 'ColabLig'; 
+    src: url('../Content/font/ColabLig.eot'); /* IE9 Compat Modes */ 
+    src: url('../Content/font/ColabLig.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 
+    url('../Content/font/ColabLig.woff') format('woff'), /* Pretty Modern Browsers */ 
+    url('../Content/font/ColabLig.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+    font-family: ColabLig;
+}
+
+.input-group-icon input.form-control, .input-search input.form-control,
+.btn, a, .userbox .name, .userbox.open .dropdown-menu a, .userbox.open .dropdown-menu i,
+.select2-container--bootstrap .select2-selection, .ui-pnotify .notification .ui-pnotify-text,
+span.select2-selection__placeholder, span.select2-selection__rendered {
+    font-size: 15px;
+}
+
+.ui-pnotify .notification .ui-pnotify-title {
+    font-size: 16px;
+}
+
+#header {
+    color: #22a7d1;
+    background-color: #FFF;
+}
+
+#barraMenu {
+    background-color: #22a7d1;
+}
+
+#footer {
+    background-color: #fff;
+}
+
+html, body {
+    height: 100%;
+    font-family: ColabLig;
+    font-size: 15px;
+}
+
+.form-control {
+    font-size: 15px;
+}
+
+.table > thead > tr > th {
+    padding: 14px 8px;
+    vertical-align: middle;
+}
+
+#body {
+    min-height: 100%;
+}
+
+#footer, .push {
+    clear: both;
+}
+
+#content {
+    min-height: 92%;
+    height: auto !important;
+    height: 100%;
+}
+
+table.adminTablas {
+    border: 1px solid #ddd !important;
+}
+
+    table.adminTablas thead {
+        background: #D8E6EE;
+    }
+
+        table.adminTablas thead tr th, table.adminTablas thead tr th a {
+            color: #282828;
+        }
+
+.no-border {
+    border: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.separador {
+    background-color: #F6F6F6;
+    background-image: linear-gradient(#F6F6F6 60%, #EDEDED);
+    display: inline-block;
+    height: 100%;
+    margin: 0 25px 0;
+    width: 2px;
+    vertical-align: middle;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fa-1_1x {
+    font-size: 1.1em !important;
+}
+
+.fa-1_2x {
+    font-size: 1.2em !important;
+}
+
+.fa-1_5x {
+    font-size: 1.5em !important;
+}
+
+.input-daterange .input-group-addon {
+    width: auto;
+    -moz-min-width: 36px !important;
+    -ms-min-width: 36px !important;
+    -o-min-width: 36px !important;
+    -webkit-min-width: 36px !important;
+    min-width: 36px !important;
+    padding: 4px 5px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    -ms-text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
+    vertical-align: middle;
+    background-color: #eeeeee;
+    border: solid #cccccc;
+    border-width: 1px 0;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.dp-from {
+    border-left: 1px solid #cccccc !important;
+}
+
+.form-group:last-child, .form-group:last-of-type {
+    margin-bottom: 15px;
+}
+
+.select2-container, .select2, .select2-container--bootstrap {
+    width: initial !important;
+}
+
+.input-daterange .input-dp-from {
+    margin-right: -20px !important;
+}
+
+.mfp-bg {
+    -ms-opacity: 0.6 !important;
+    opacity: 0.6 !important;
+}
+
+#modalUsuarioDA, #modalUsuarioExt {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    max-width: 1000px !important;
+    margin: 40px auto;
+    position: relative;
+}
+
+.tdMarcarRegistros {
+    text-align: center;
+    width: 60px;
+}
+
+.tdMarcarRegistros input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.tdOpciones {
+    text-align: center;
+    width: 80px;
+}
+
+.tdEstado {
+    text-align: center;
+    width: 70px;
+}
+
+#dptoUsuarioExiste,
+#vinculacionUsuarioExiste,
+#unidadUsuarioExiste,
+#UESolicitudAccesoAdicional #buscarCuentaDA,
+#UESolicitudAccesoAdicional .divDatosUsuarioExJUR,
+#divBuscarUsuarioExterno, #divBuscarUsuarioInterno,
+#tabDU .divDatosUsuarioExJUR,
+.divDatosUsuario, #divActualizarCuentaUsuario {
+    display: none;
+}
+
+.chbReq, #chbMarcarRequerimientos {
+    cursor: pointer;
+}
+
+#modalSeleccioneCuenta {
+    max-width: 200px !important;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 373px) {
+    .btn-ancho {
+        display: block;
+        width: 100%;
+    }
+
+    .input-daterange .input-group-addon {
+        -moz-min-width: 8px !important;
+        -ms-min-width: 8px !important;
+        -o-min-width: 8px !important;
+        -webkit-min-width: 8px !important;
+        min-width: 8px !important;
+    }
+
+    .input-daterange input[type="text"] {
+        padding: 0 !important;
+        font-size: 13px;
+    }
+
+    .pagination > li > a, .pagination > li > span {
+        padding: 4px 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .td-dni {
+        max-width: 70px !important;
+        text-align: center;
+    }
+
+    .td-nombres {
+        max-width: 100px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-apellidos {
+        max-width: 100px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-cuenta {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+        text-align: center;
+    }
+
+    .td-correo {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-departamento {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-unidad {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-vinculacion {
+        max-width: 100px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .td-opciones {
+        max-width: 60px !important;
+        text-align: center;
+    }
+
+    #tabHR .td-rolPor {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-cuenta {
+        max-width: 120px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-fechaRegistro {
+        max-width: 120px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-observacion {
+        max-width: 120px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-cuentaDerivada {
+        max-width: 120px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #divBotonLimpiarDatos, #divBotonAgregarRequerimiento {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .td-dni {
+        max-width: 45px !important;
+        text-align: center;
+        white-space: normal !important;
+    }
+
+    .td-nombres {
+        max-width: 60px !important;
+        word-wrap: break-word;
+    }
+
+    .td-apellidos {
+        max-width: 60px !important;
+        word-wrap: break-word;
+    }
+
+    .td-cuenta {
+        max-width: 70px !important;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .td-correo {
+        max-width: 80px !important;
+        word-wrap: break-word !important;
+        -moz-word-break: break-all !important;
+        -o-word-break: break-all !important;
+        word-break: break-all !important;
+        white-space: normal !important;
+    }
+
+    .td-departamento {
+        max-width: 80px !important;
+    }
+
+    .td-unidad {
+        max-width: 80px !important;
+    }
+
+    .td-vinculacion {
+        max-width: 60px !important;
+    }
+
+    .td-opciones {
+        width: 65px !important;
+        text-align: center;
+    }
+
+    #solicitudListaCargosFuncional td.td-opciones {
+        max-width: 14px !important;
+        text-align: center;
+    }
+
+    .userbox {
+        margin: 8px;
+    }
+
+    #tabHR .td-rolPor {
+        max-width: 40px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-cuenta {
+        max-width: 70px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-fechaRegistro {
+        max-width: 30px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-observacion {
+        max-width: 100px !important;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #tabHR .td-cuentaDerivada {
+        max-width: 70px !important;
+        text-align: center;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    #divBotonLimpiarDatos {
+        padding-left: 30px;
+    }
+
+    #divBotonAgregarRequerimiento {
+        padding-right: 30px;
+    }
+}
+
+#paginacionPopupUsuarios .pagination > li a,
+#paginacionCF .pagination > li a {
+    padding: 8px !important;
+}
+
+.table#solicitudListaUsuarios > tbody > tr > td,
+.table#solicitudListaUsuariosExternos > tbody > tr > td {
+    vertical-align: middle;
+    padding: 4px;
+}
+
+#modalCargoFuncional {
+    max-width: 800px;
+}
+
+#solicitudListaCargosFuncional td.td-opciones, #solicitudListaUsuarios td.td-opciones,
+#solicitudListaUsuariosExternos td.td-opciones {
+    padding: 4px;
+}
+
+    #solicitudListaCargosFuncional td.td-opciones > a.seleccionarCargo,
+    #solicitudListaUsuarios td.td-opciones > a.seleccionarUsuario,
+    #solicitudListaUsuariosExternos td.td-opciones > a.seleccionarUsuario {
+        padding: 4px 8px;
+        cursor: pointer;
+        border: 1px solid lightblue;
+    }
+
+/* INICIO nav bar*/
+
+
+.dropdown-menu > li.kopie > a {
+    padding-left: 5px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 5px;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        -ms-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+.dropdown-submenu:hover > a:after {
+        border-left-color: #555;
+    }
+
+@media (max-width: 767px) {
+
+    .navbar-nav {
+        display: inline;
+    }
+
+        .navbar-nav .navbar-brand {
+            display: inline;
+        }
+
+        .navbar-nav .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+        .navbar-nav .dropdown-menu > li > a {
+            margin-top: 2px;
+        }
+
+        .navbar-nav .open .dropdown-menu > li > a {
+            color: #444;
+        }
+
+            .navbar-nav .open .dropdown-menu > li > a:first-child {
+                margin-top: 0;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+    .menu-nivel-2.open > .menu-nivel-3 > a:focus {
+        background-color: #555;
+        color: lightgray !important;
+        padding-left: 2.5em;
+    }
+
+    .menu-nivel-1 .open > .menu-nivel-2 .open > a:focus {
+        background-color: #555;
+        color: lightgray !important;
+        padding-left: 2.5em;
+    }
+
+    li.menu-nivel-2.open > a {
+        background-color: #555 !important;
+        color: lightgray !important;
+    }
+
+    li.menu-nivel-2 > a:hover {
+        background-color: #555 !important;
+        color: lightgray !important;
+    }
+
+    li.menu-nivel-3 {
+        background-color: #EEE;
+    }
+
+        li.menu-nivel-3 > a {
+            padding-left: 3em !important;
+            word-wrap: break-word !important;
+            white-space: normal;
+        }
+
+            li.menu-nivel-3 > a:hover {
+                background-color: #888 !important;
+                color: #fff !important;
+            }
+
+    .navbar-nav .open .dropdown-menu {
+        -ms-border-radius: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .dropdown-menu {
+        padding-left: 10px;
+    }
+
+        .dropdown-menu .dropdown-menu {
+            padding-left: 20px;
+        }
+
+            .dropdown-menu .dropdown-menu .dropdown-menu {
+                padding-left: 30px;
+            }
+
+    li.dropdown.open {
+        border: 0 solid red;
+    }
+
+    li.divider {
+        margin: 0 !important;
+    }
+
+    ul.dropdown-menu {
+        background-color: #fff !important;
+    }
+
+    .linea {
+        border-bottom: 1px solid silver;
+    }
+
+    .linea-n1 {
+        border-bottom: 1px solid silver;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+    }
+
+    .navbar .navbar-nav > li > a {
+        color: #22a7d1 !important;
+        font-size: 1.1em;
+    }
+
+    .navbar-header > a {
+        text-align: center;
+    }
+    .panel-actions {
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    ul.nav li:hover > ul.dropdown-menu {
+        display: block;
+    }
+
+    #navbar {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav > li > a {
+        color: #fff !important;
+        font-size: 1.1em;
+    }
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li.dropdown:hover {
+        background-color: #22a7d1;
+        color: #fff !important;
+    }
+
+    .navbar .navbar-nav li.dropdown ul.dropdown-menu {
+        padding: 0;
+    }
+}
+
+/*extras*/
+.header-right {
+    height: auto;
+}
+
+.dropdown-menu > li > a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #22a7d1 !important;
+    border-bottom: 1px solid #22a7d1 !important;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    -ms-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+.navbar-header .navbar-brand {
+    color: #555 !important;
+}
+
+.nav > li > a:focus, .nav > li > a:active {
+    background-color: #444;
+}
+
+.nav > li > a:hover {
+    background-color: #666;
+}
+
+.navbar .navbar-nav > .open > a {
+    font-weight: bold;
+    background-color: #444 !important;
+}
+
+.tabs .nav li a {
+    font-size: 15px;
+}
+
+    .tabs .nav li a:hover {
+        background: #22a7d1;
+        color: #fff !important;
+    }
+
+.tabs .nav li.active a {
+    background: #fff;
+    color: #22a7d1 !important;
+}
+
+    .tabs .nav li.active a:hover {
+        background: #fff;
+        color: #22a7d1;
+    }
+
+.navbar .navbar-nav > .active > a:hover {
+    background-color: #444;
+}
+
+.nav > li > a:hover, .dropdown:hover {
+    background-color: #444;
+}
+
+.navbar .navbar-toggle {
+    border-color: #777;
+}
+
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+        background-color: #fff;
+    }
+
+.dropdown-menu .menu-nivel-2 > li > a:focus {
+    background-color: transparent;
+    color: #000 !important;
+}
+
+.navbar-toggle {
+    padding: 6px 10px 2px 10px;
+}
+
+/* FIN nav bar*/
+
+#modalDetalleRequerimiento {
+    max-width: 1000px;
+}
+
+#pagPrev, #pagNext, #pagPrimera, #pagUltima {
+    cursor: pointer !important;
+}
+
+#pagActual {
+    cursor: not-allowed;
+}
+
+.userbox.open .dropdown-menu {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-resaltar-light {
+    background: #fffebb;
+    color: #000;
+}
+
+.bg-resaltar-dark {
+    background: #F5FF00;
+    color: #000;
+}
+
+.text-atencion-inmediata {
+    background: #f7fc6f !important;
+}
+
+.text-atencion-futura {
+    background: #fffebb !important;
+}
+
+.td-checks {
+    width: 80px;
+    text-align: center;
+}
+
+header .panel-title {
+    font-size: 26px;
+}
+
+html .panel-card .panel-heading {
+    background: #D8E6EE;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+    font-size: 16px !important;
+}
+
+.body-sign .panel-sign .panel-body {
+    padding-bottom: 28px;
+    padding-top: 22px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+input:-webkit-autofill {
+    background: white;
+}
+
+.trClickeado {
+    background-color: #DEFFBD !important;
+}
+
+.input-dp-from, .input-dp-to {
+    text-align: center;
+}
+
+.datepicker-days table tbody tr td.day, .datepicker table tbody tr td.day.new {
+    color: #22a7d1;
+}
+
+.datepicker-days table tbody tr td.old.disabled.day,
+.datepicker table tbody tr td.disabled.day,
+.datepicker table tbody tr td.new.disabled.day  {
+    color: #CCC;
+}
+
+.datepicker table tbody tr td.disabled:hover {
+    background: none;
+    color: #CCC;
+    cursor: not-allowed;
+}
+
+.datepicker table tbody tr td.day:hover {
+    background: #22a7d1;
+    color: #FFF;
+}
+
+.datepicker table tbody tr td.old.disabled.day:hover,
+.datepicker table tbody tr td.disabled.day:hover, 
+.datepicker table tbody tr td.new.disabled.day:hover {
+    background: none;
+    color: #CCC;
+}
+
+.datepicker table td.day {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.panel-footer #divbotonRegistro {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.lblTitleGroup {
+    color: rgba(34, 167, 209, 0.77) !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#tabRegistroSolicitud, #tabRegistroRequerimientos {
+    color: rgba(34, 167, 209, 0.77);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-group-btn button {
+    font-size: 14px;
+}

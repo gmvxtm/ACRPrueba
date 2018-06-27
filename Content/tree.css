@@ -1,0 +1,107 @@
+﻿.tree li {
+    margin: 0px 0;
+    list-style-type: none;
+    position: relative;
+    padding: 5px 5px 0px 5px;
+}
+
+.tree ul {
+    margin-bottom: 5px;
+}
+
+    .tree li::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 110%;
+        right: auto;
+        left: -20px;
+        border-left: 1px solid #ccc;
+        bottom: 50px;
+    }
+
+    .tree li::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        width: 25px;
+        height: 20px;
+        right: auto;
+        left: -20px;
+        border-top: 1px solid #ccc;
+    }
+
+    .tree li a {
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 0px 10px;
+        text-decoration: none;
+        color: #666;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+/*Remove connectors before root*/
+/*.tree > ul > li::before, .tree > ul > li::after{  
+    border: 0;  
+}*/
+/*Remove connectors after last child*/
+/*.tree ul:first-child li:first-child::before {
+    height: 100px;
+}*/
+
+.tree li:last-child::before {
+    height: 16px;
+}
+
+.tree > ul > li::before {
+    height: 116% !important;
+}
+
+.tree > ul:last-child > li::before {
+    height: 16px !important;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover + ul li a {
+    background: #C0C0C0;
+    color: #ffffff;
+    border: 1px solid #C0C0C0;
+}
+    /*Connector styles on hover*/
+    .tree li a:hover + ul li::after,
+    .tree li a:hover + ul li::before,
+    .tree li a:hover + ul::before,
+    .tree li a:hover + ul ul::before {
+        border-color: #C0C0C0;
+    }
+
+.tree-checkbox {
+    margin: 4px !important;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+.tree {
+    overflow: auto;
+    padding-left: 0px;
+    position: relative;
+}
+
+    /* Parche */
+    .tree label {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+.tree-in-svd {
+    display: none !important;
+}
